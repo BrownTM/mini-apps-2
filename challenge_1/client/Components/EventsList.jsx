@@ -7,12 +7,9 @@ const EventsList = (props) => {
       return (
         <thead>
         <tr>
-          <th></th>
           <th>Date</th>
           <th>Description</th>
           <th>Lang</th>
-          <th>Category1</th>
-          <th>Granularity</th>
         </tr>
       </thead>
       );
@@ -22,9 +19,9 @@ const EventsList = (props) => {
     <table>
       {showHeader()}
       <tbody>
-        {props.allEvents.map((event) => {
+        {props.allEvents.map((event, i) => {
           return (
-            <Event eventDetail={event} key={event.id} />
+            <Event eventDetail={event} key={i} />
             );
           }
         )}

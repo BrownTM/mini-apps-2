@@ -13,17 +13,7 @@ class App extends React.Component{
       allEvents: [],
       pageNumber: 0,
       limit: 10,
-      pageCount: 0,
-      view: 'home',
-      selectedEvent: {
-        date: '',
-        description: '',
-        lang: '',
-        category1: '',
-        category2: '',
-        granularity: '',
-        id: ''
-      }
+      pageCount: 0
     };
 
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -79,7 +69,7 @@ class App extends React.Component{
           breakClassName={'break-me'}
           pageCount={this.state.pageCount}
           marginPagesDisplayed={2}
-          pageRangeDisplayed={5}
+          pageRangeDisplayed={2}
           onPageChange={this.handleNextClick}
           forceSelected={this.state.pageNumber}
           containerClassName={'pagination'}

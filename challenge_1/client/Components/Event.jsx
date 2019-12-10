@@ -6,8 +6,6 @@ const Event = (props) => {
       <td>{props.eventDetail.date}</td>
       <td>{props.eventDetail.description}</td>
       <td>{props.eventDetail.lang}</td>
-      <td>{props.eventDetail.category1}</td>
-      <td>{props.eventDetail.granularity}</td>
     </tr>
   );
 };
